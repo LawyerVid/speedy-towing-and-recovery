@@ -22,6 +22,7 @@ const HeroTitleContainer = (props: HeroTitleContainerProps) => {
                 alt="Trucks aligned and ready to help"
                 fill
                 className={"!relative max-w-[min(768px,90vw)] lg:max-w-[35vw] h-auto"}
+                priority
             />
             <TitleText>And Towing</TitleText>
             <p className={"text-sm text-gray-400"}>A limited libability company</p>
