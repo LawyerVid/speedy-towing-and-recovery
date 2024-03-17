@@ -9,19 +9,19 @@ interface HeroTitleContainerProps {
 
 const TitleText = ({ children }: { children: string }) => {
     return (
-        <h1 className={"text-[7vw] lg:text-6xl font-bold whitespace-nowrap"}>{children}</h1>
+        <h1 className={"text-[9vw] sm:text-[7vw] lg:text-6xl font-bold whitespace-nowrap"}>{children}</h1>
     )
 }
 
 const HeroTitleContainer = (props: HeroTitleContainerProps) => {
     return (
-        <div className={"flex flex-col justify-center items-center gap-3"}>
+        <div className={"w-full flex flex-col justify-center items-center gap-3 md:px-20"}>
             <TitleText>Speedy Recovery</TitleText>
             <Image
                 src={heroImage}
                 alt="Trucks aligned and ready to help"
                 fill
-                className={"!relative max-w-[min(768px,90vw)] lg:max-w-[35vw] h-auto"}
+                className={"!relative max-w-[min(768px,85vw)] lg:max-w-[45vw] lg:!w-[35vw] h-auto"}
                 priority
             />
             <TitleText>And Towing</TitleText>

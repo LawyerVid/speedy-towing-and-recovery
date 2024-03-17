@@ -6,7 +6,7 @@ interface HeroInformationContainerProps {
 
 }
 
-const className = "text-lg font-semibold flex flex-row"
+const className = "sm:text-lg font-semibold flex flex-row"
 
 const InfoText = ({ content }: { content: string }) => {
     return <p >{content}</p>
@@ -14,7 +14,7 @@ const InfoText = ({ content }: { content: string }) => {
 
 const HeroInformationContainer = (props: HeroInformationContainerProps) => {
     return (
-        <div className={"flex flex-col justify-center items-center gap-2 [&_*]:uppercase"}>
+        <div className={"flex flex-col justify-center items-center gap-2 [&_*]:uppercase [&_*]:whitespace-nowrap"}>
             <a
                 href="tel:12192661203"
                 className={`${className} flex flex-row group/textItem`}
@@ -31,8 +31,11 @@ const HeroInformationContainer = (props: HeroInformationContainerProps) => {
                 <span
                     className={"w-[2px] h-full mr-2 bg-transparent transition-colors duration-150 group-hover/textItem:bg-sky-500"}
                 />
-                <span>
+                <span className={"hidden sm:inline-block"}>
                     {"Email: ISKURA@speedyrecoverytowing.com"}
+                </span>
+                <span className={"inline-block sm:hidden"}>
+                    {"ISKURA@speedyrecoverytowing.com"}
                 </span>
             </a>
             <InfoText content="10420 S. Circle Drive" />
