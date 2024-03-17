@@ -38,7 +38,7 @@ const HeroInformationContainer = (props: HeroInformationContainerProps) => {
             </a>
             <InfoText content="17811 Bretz Drive" />
             <InfoText content="Homewood, Illinois 60430" />
-            <a href="tel:12192661203" className={"font-semi-bold bg-blue-700 text-white p-4 rounded hover:bg-blue-600 transition-colors duration-200"}>
+            <a href="tel:12192661203" className={"font-semi-bold mt-4 lg:mt-0 bg-blue-700 text-white p-4 rounded hover:bg-blue-600 transition-colors duration-200"}>
                 Open 24 hours
             </a>
         </div>
