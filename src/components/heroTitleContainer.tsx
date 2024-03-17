@@ -24,7 +24,7 @@ const HeroTitleContainer = (props: HeroTitleContainerProps) => {
                 className={"!relative max-w-[min(768px,85vw)] lg:max-w-[45vw] lg:!w-[35vw] h-auto"}
                 priority
             />
-            <TitleText>And Towing</TitleText>
+            <TitleText>{"& Towing"}</TitleText>
             <p className={"text-sm text-gray-400"}>A limited libability company</p>
         </div>
     )

@@ -38,8 +38,11 @@ const HeroInformationContainer = (props: HeroInformationContainerProps) => {
                     {"ISKURA@speedyrecoverytowing.com"}
                 </span>
             </a>
-            <InfoText content="10420 S. Circle Drive" />
-            <InfoText content="Oak Lawn, Illinois 60453" />
+            <InfoText content="17811 Bretz Drive" />
+            <InfoText content="Homewood, Illinois 60430" />
+            <a href="tel:12192661203" className={"font-semi-bold bg-blue-700 text-white p-4 rounded hover:bg-blue-600 transition-colors duration-200"}>
+                Open 24 hours
+            </a>
         </div>
     )
 }
